@@ -1,0 +1,59 @@
+.displaytodos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 48px;
+}
+
+.displaytodos .buttons {
+    margin-bottom: 32px;
+}
+
+.displaytodos .buttons button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.displaytodos .buttons button:focus {
+    outline: none;
+}
+
+.displaytodos .buttons button:not(:last-child) {
+    margin-right: 16px;
+}
+
+.displaytodos ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    margin: 0 auto;
+    list-style: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .displaytodos {
+        margin-top: 32px;
+        overflow: hidden;
+    }
+
+    .displaytodos ul {
+        display: flex;
+        align-items: center;
+        align-self: center;
+    }
+
+    .displaytodos .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .displaytodos .buttons button:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}

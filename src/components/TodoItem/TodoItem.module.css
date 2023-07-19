@@ -1,0 +1,58 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    height: 128px;
+    margin: 0 16px 16px 0;
+    padding: 16px;
+    background: #edeeff;
+    border-radius: 8px;
+}
+
+.card textarea {
+    height: 70%;
+    padding: 8px;
+    color: #271c6c;
+    background-color: #e1ebfd;
+    border: none;
+    border-radius: 8px;
+}
+
+.card textarea:disabled {
+    background-color: transparent;
+}
+
+.card .btns {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+.card .btns button {
+    margin: 0 5px;
+    color: #271c6c;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.card .btns button:focus {
+    outline: none;
+}
+
+.completed {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 640px) {
+    .card {
+        width: 100%;
+        margin-right: 0;
+    }
+}
